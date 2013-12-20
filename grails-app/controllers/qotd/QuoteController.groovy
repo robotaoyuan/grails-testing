@@ -2,7 +2,11 @@ package qotd
 
 class QuoteController {
 
-    def index() { }
+    def index() { 
+	redirect(action: "home") 
+    }
     
-    def home() = { render "<h1>fuck you motherfucker</h1>"}
+    def home() {
+	 render "<h1>fuck you motherfucker</h1>"
+    }
 }
